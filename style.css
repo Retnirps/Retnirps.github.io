@@ -1,0 +1,164 @@
+body {
+    font-size: 11pt;
+    background-color: darkslategray;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 40pt;
+    color: black;
+    font-family: "Oleo Script", Helvetica, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+header {
+    height: 40pt;
+    width: 100%;
+    background: aliceblue;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: fixed;
+}
+
+.games, .programming, .other_interests {
+    margin: 5% 15% 40pt;
+    width: 70%;
+    height: auto;
+    background: aliceblue;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+main {
+    padding: 1em;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+footer {
+    height: 30pt;
+    width: 100%;
+    text-align: center;
+    background: aliceblue;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    bottom: 0;
+    position: fixed;
+}
+
+#games_header, #programming_header, #other_interests_header {
+    width: 100%;
+    height: 20pt;
+    background: gray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+}
+
+#games_list {
+    list-style: none;
+    padding: 0;
+}
+
+.wot_blitz, .pubg_mobile {
+    border-radius: 0 0 10pt 10pt;
+    margin: 15px auto;
+    background-color: darkgray;
+    width: 90%;
+    height: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+#wot_blitz_img {
+    width: 30%;
+    horiz-align: left;
+    padding: 0 0 0 0;
+}
+
+#wot_blitz_info {
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 20pt;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#wot_blitz_header {
+    height: 20pt;
+    background: gray;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    vertical-align: top;
+    line-height: 20pt;
+    text-align: center;
+}
+
+#pubg_mobile_img {
+    width: 30%;
+    horiz-align: left;
+    padding: 0 0 0 0;
+}
+
+#pubg_mobile_info {
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 20pt;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#pubg_mobile_header {
+    height: 20pt;
+    background: gray;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    vertical-align: top;
+    line-height: 20pt;
+    text-align: center;
+}
+
+#programming_languages {
+    width: available;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+#c_plus_plus, #java, #c_sharp, #git_hub {
+    width: 20%;
+    height: 20%;
+}
+
+#git_hub_link {
+    text-align: right;
+    margin: 0 0 0 0;
+}
+
+#container1, #container2 {
+    width: 70%;
+    height: available;
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+#p_games, #p_programming, #p_other_interests {
+    margin-top: 0;
+    margin-left: 10pt;
+    line-height: 20pt;
+}
+
+#footer {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 30pt;
+}
