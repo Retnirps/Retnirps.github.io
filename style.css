@@ -166,6 +166,7 @@ footer {
     justify-content: center;
     overflow: hidden;
     border-radius: inherit;
+    flex-shrink: 1;
 }
 
 #drift_images img {
