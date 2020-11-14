@@ -50,7 +50,7 @@ footer {
     position: fixed;
 }
 
-#games_header, #programming_header, #other_interests_header {
+#games_header, #programming_header, #other_interests_header{
     width: 100%;
     height: 20pt;
     background: gray;
@@ -72,11 +72,12 @@ footer {
     height: border-box;
     display: flex;
     flex-direction: row;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 #wot_blitz_img {
     width: 30%;
-    horiz-align: left;
+    float: left;
     padding: 0 0 0 0;
 }
 
@@ -99,7 +100,7 @@ footer {
 
 #pubg_mobile_img {
     width: 30%;
-    horiz-align: left;
+    float: left;
     padding: 0 0 0 0;
 }
 
@@ -140,6 +141,37 @@ footer {
     margin: 0 0 0 0;
 }
 
+.drift {
+    border-radius: 0 0 10pt 10pt;
+    margin: 15pt auto;
+    background-color: darkgray;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#drift_header {
+    width: available;
+    height: 20pt;
+    background: gray;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+}
+
+#drift_images {
+    width: available;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: inherit;
+}
+
+#drift_images img {
+    flex-basis: 50%;
+}
+
 #container1, #container2 {
     width: 70%;
     height: available;
@@ -148,7 +180,7 @@ footer {
     vertical-align: top;
 }
 
-#p_games, #p_programming, #p_other_interests {
+#p_games, #p_programming, #p_other_interests, #p_drift_header {
     margin-top: 0;
     margin-left: 10pt;
     line-height: 20pt;
