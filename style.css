@@ -170,7 +170,7 @@ footer {
 }
 
 #drift_images img {
-    flex-basis: 50%;
+    width: 50%;
 }
 
 #container1, #container2 {
