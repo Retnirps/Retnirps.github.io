@@ -5,16 +5,26 @@
     <link rel="stylesheet" href="style.css">
     <link href="//fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript" src="countTags.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
 <header>
     <p id="header">Majesta's Portfolio</p>
+    <ul id="buttons">
+        <li>
+            <a class="custom_button" href="#">Contact Me</a>
+        </li>
+        <li>
+            <a class="custom_button" onclick="execute(); countTags()" href="#">Run JS</a>
+        </li>
+    </ul>
 </header>
 <main>
     <div class="games" style="border-radius: 0 0 10pt 10pt">
         <div id="games_header"><p id="p_games">Games</p></div>
-        <ul id="games_list">
+        <ul>
             <li>
                 <div class="wot_blitz">
                     <img id="wot_blitz_img" style="border-radius: 0 0 0 10pt"
@@ -62,8 +72,6 @@
             </div>
         </div>
     </div>
-    <script src="test.js"></script>
-    <script src="countTags.js"></script>
 </main>
 <footer>
     <p id="footer">2020</p>
