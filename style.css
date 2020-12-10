@@ -59,9 +59,13 @@ footer {
     font-size: 10pt;
 }
 
-#games_list {
+ul {
     list-style: none;
     padding: 0;
+}
+
+#buttons {
+    float: right;
 }
 
 .wot_blitz, .pubg_mobile {
@@ -194,4 +198,37 @@ footer {
     font-family: 'Allerta', Helvetica, Arial, sans-serif;
     font-size: 10pt;
     line-height: 30pt;
+}
+
+.custom_button {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    margin: 20px 20px;
+    padding: 10px 30px;
+    position: relative;
+    border: 4px solid aliceblue;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    transition: .4s;
+}
+
+.custom_button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 4px solid rgba(0,0,0,0);
+    transition: .4s;
+}
+
+.custom_button:hover:after {
+    border-color: aliceblue;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
 }
