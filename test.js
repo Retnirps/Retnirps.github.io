@@ -49,8 +49,8 @@ class MyArray extends Array {
         // return Math.min.apply(null, arr);
         let min = Number.MAX_SAFE_INTEGER;
         for (let i = 0; i < this.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
+            if (this[i] < min) {
+                min = this[i];
             }
         }
         return min;
@@ -60,8 +60,8 @@ class MyArray extends Array {
         // return Math.max.apply(null, arr);
         let max = Number.MIN_SAFE_INTEGER;
         for (let i = 0; i < this.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
+            if (this[i] > max) {
+                max = this[i];
             }
         }
         return max;
@@ -80,11 +80,13 @@ class MyArray extends Array {
 }
 
 
-let arr = new MyArray(1000);
-arr.randomIntegers(5000);
+function execute() {
+    let arr = new MyArray(1000);
+    arr.randomIntegers(5000);
 
-alert("array:\n" + arr);
-alert("min of array:\n" + arr.min());
-alert("max of array:\n" + arr.max());
-alert("median of array:\n" + arr.median());
-alert("sorted array:\n" + quickSort(arr, 0, arr.length - 1));
+    alert("array:\n" + arr);
+    alert("min of array:\n" + arr.min());
+    alert("max of array:\n" + arr.max());
+    alert("median of array:\n" + arr.median());
+    alert("sorted array:\n" + quickSort(arr, 0, arr.length - 1));
+}
