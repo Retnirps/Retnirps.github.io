@@ -8,18 +8,45 @@
     <script type="text/javascript" src="test.js"></script>
     <script type="text/javascript" src="countTags.js"></script>
     <title>Portfolio</title>
+    <script src="//code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Скрыть PopUp при загрузке страницы
+            PopUpHide();
+        });
+        //Функция отображения PopUp
+        function PopUpShow() {
+            $(".overlay").show();
+            $(".popup").show();
+        }
+        //Функция скрытия PopUp
+        function PopUpHide() {
+            $(".overlay").hide();
+            $(".popup").hide();
+        }
+    </script>
 </head>
-<body>
+<body id="custom">
+<div class="overlay"></div>
 <header>
     <p id="header">Majesta's Portfolio</p>
     <ul id="buttons">
         <li>
-            <a class="custom_button" href="#">Contact Me</a>
+            <a class="custom_button" id="contact" href="javascript:PopUpShow()">Contact Me</a>
         </li>
         <li>
             <a class="custom_button" onclick="execute(); countTags()" href="#">Run JS</a>
         </li>
     </ul>
+    <div class="popup">
+        <div id="popup_header">
+            <p id="p_popup">Contact Info</p>
+            <a href="javascript:PopUpHide()"><img id="close_button_img"
+                                                src="https://www.searchpng.com/wp-content/uploads/2019/03/Hold-butt-715x715.png"
+                                                alt="close_button"></a>
+        </div>
+        <p id="phone">Phone Number: +7-911-014-31-15</p>
+    </div>
 </header>
 <main>
     <div class="games" style="border-radius: 0 0 10pt 10pt">
